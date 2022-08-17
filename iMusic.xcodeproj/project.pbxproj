@@ -10,6 +10,7 @@
 		3969A8C328AC166E003FE20E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C228AC166E003FE20E /* MainTabBarController.swift */; };
 		3969A8C528AC1B31003FE20E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C428AC1B31003FE20E /* SearchViewController.swift */; };
 		3969A8C728ACF31E003FE20E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C628ACF31D003FE20E /* Extentions.swift */; };
+		3969A8C928AD0979003FE20E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C828AD0979003FE20E /* SearchResponse.swift */; };
 		397DC74628ABFD7200F7C406 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DC74528ABFD7200F7C406 /* AppDelegate.swift */; };
 		397DC74828ABFD7200F7C406 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DC74728ABFD7200F7C406 /* SceneDelegate.swift */; };
 		397DC74A28ABFD7200F7C406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DC74928ABFD7200F7C406 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		3969A8C228AC166E003FE20E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3969A8C428AC1B31003FE20E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3969A8C628ACF31D003FE20E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		3969A8C828AD0979003FE20E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		397DC74228ABFD7200F7C406 /* iMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		397DC74528ABFD7200F7C406 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		397DC74728ABFD7200F7C406 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +54,6 @@
 				2826778ED9A9A3A34156C98C /* Pods-iMusic.debug.xcconfig */,
 				173F164DF70393C142EFC017 /* Pods-iMusic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -82,6 +83,7 @@
 				397DC74928ABFD7200F7C406 /* ViewController.swift */,
 				3969A8C228AC166E003FE20E /* MainTabBarController.swift */,
 				3969A8C428AC1B31003FE20E /* SearchViewController.swift */,
+				3969A8C828AD0979003FE20E /* SearchResponse.swift */,
 				3969A8C628ACF31D003FE20E /* Extentions.swift */,
 				397DC74E28ABFD7900F7C406 /* Assets.xcassets */,
 				397DC75028ABFD7900F7C406 /* LaunchScreen.storyboard */,
@@ -212,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3969A8C928AD0979003FE20E /* SearchResponse.swift in Sources */,
 				3969A8C528AC1B31003FE20E /* SearchViewController.swift in Sources */,
 				397DC74A28ABFD7200F7C406 /* ViewController.swift in Sources */,
 				3969A8C728ACF31E003FE20E /* Extentions.swift in Sources */,
