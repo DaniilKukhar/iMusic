@@ -16,9 +16,10 @@ class MainTabBarController: UITabBarController {
         tabBar.isTranslucent = false
         tabBar.tintColor = UIColor(rgb: 0xFF0060)
         
+        let searchVC: SearchViewController = SearchViewController.loadFromSoryboard()
         
         viewControllers = [
-            generateViewController(rootViewController: SearchViewController(), image: UIImage(named: "search")!, title: "Search"),
+            generateViewController(rootViewController: searchVC, image: UIImage(named: "search")!, title: "Search"),
             generateViewController(rootViewController: ViewController(), image: UIImage(named: "library")!, title: "Library")
         ]
     }
