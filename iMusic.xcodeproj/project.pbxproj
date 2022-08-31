@@ -27,6 +27,9 @@
 		397DC74A28ABFD7200F7C406 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397DC74928ABFD7200F7C406 /* ViewController.swift */; };
 		397DC74F28ABFD7900F7C406 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 397DC74E28ABFD7900F7C406 /* Assets.xcassets */; };
 		397DC75228ABFD7900F7C406 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 397DC75028ABFD7900F7C406 /* LaunchScreen.storyboard */; };
+		399597DA28BF739900299851 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399597D928BF739900299851 /* FooterView.swift */; };
+		399597DD28BF83C800299851 /* TrackDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 399597DC28BF83C800299851 /* TrackDetailView.xib */; };
+		399597E128BF843E00299851 /* TrackDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399597E028BF843E00299851 /* TrackDetailView.swift */; };
 		D1B3B4431C564EBDF5A1C299 /* Pods_iMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B98DC5CF89AF954F2C7F7A48 /* Pods_iMusic.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		397DC74E28ABFD7900F7C406 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		397DC75128ABFD7900F7C406 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		397DC75328ABFD7900F7C406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		399597D928BF739900299851 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		399597DC28BF83C800299851 /* TrackDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackDetailView.xib; sourceTree = "<group>"; };
+		399597E028BF843E00299851 /* TrackDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackDetailView.swift; sourceTree = "<group>"; };
 		B98DC5CF89AF954F2C7F7A48 /* Pods_iMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -82,6 +88,8 @@
 		3969A8CC28AD2687003FE20E /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				399597DB28BF839400299851 /* TrackDetailView */,
+				399597D828BF738000299851 /* FooterView */,
 				3969A8F028AE94DB003FE20E /* Cell */,
 				3969A8EB28AE6421003FE20E /* SearchViewController.storyboard */,
 				3969A8E128AD2817003FE20E /* SearchViewController.swift */,
@@ -165,6 +173,23 @@
 			path = iMusic;
 			sourceTree = "<group>";
 		};
+		399597D828BF738000299851 /* FooterView */ = {
+			isa = PBXGroup;
+			children = (
+				399597D928BF739900299851 /* FooterView.swift */,
+			);
+			path = FooterView;
+			sourceTree = "<group>";
+		};
+		399597DB28BF839400299851 /* TrackDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				399597DC28BF83C800299851 /* TrackDetailView.xib */,
+				399597E028BF843E00299851 /* TrackDetailView.swift */,
+			);
+			path = TrackDetailView;
+			sourceTree = "<group>";
+		};
 		C5F84DAEBCBF2C3148C64E41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				397DC75228ABFD7900F7C406 /* LaunchScreen.storyboard in Resources */,
+				399597DD28BF83C800299851 /* TrackDetailView.xib in Resources */,
 				397DC74F28ABFD7900F7C406 /* Assets.xcassets in Resources */,
 				3969A8EC28AE6421003FE20E /* SearchViewController.storyboard in Resources */,
 				3969A8F228AE94EF003FE20E /* TrackCell.xib in Resources */,
@@ -298,6 +324,7 @@
 				3969A8EE28AE69F6003FE20E /* UIViewController + Storyboard.swift in Sources */,
 				3969A8E928AD2817003FE20E /* SearchInteractor.swift in Sources */,
 				397DC74A28ABFD7200F7C406 /* ViewController.swift in Sources */,
+				399597E128BF843E00299851 /* TrackDetailView.swift in Sources */,
 				3969A8C728ACF31E003FE20E /* Extentions.swift in Sources */,
 				3969A8E828AD2817003FE20E /* SearchViewController.swift in Sources */,
 				397DC74628ABFD7200F7C406 /* AppDelegate.swift in Sources */,
@@ -305,6 +332,7 @@
 				397DC74828ABFD7200F7C406 /* SceneDelegate.swift in Sources */,
 				3969A8E728AD2817003FE20E /* SearchModels.swift in Sources */,
 				3969A8F428AE9526003FE20E /* TrackCell.swift in Sources */,
+				399597DA28BF739900299851 /* FooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
