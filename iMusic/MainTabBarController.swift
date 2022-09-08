@@ -16,6 +16,8 @@ class MainTabBarController: UITabBarController {
         tabBar.isTranslucent = false
         tabBar.tintColor = UIColor(rgb: 0xFF0060)
         
+        setupTrackDetailView()
+        
         let searchVC: SearchViewController = SearchViewController.loadFromSoryboard()
         
         viewControllers = [
@@ -32,5 +34,12 @@ class MainTabBarController: UITabBarController {
         navigationVC.navigationBar.prefersLargeTitles = true
         
         return navigationVC
+    }
+    
+    private func setupTrackDetailView() {
+        print("Here we are setup TrackDetailView")
+        
+        let trackDetailView: TrackDetailView = TrackDetailView.loadFromNib()
+        view.addSubview(trackDetailView)
     }
 }
