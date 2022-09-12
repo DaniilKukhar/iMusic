@@ -14,6 +14,68 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udg-gX-aVc">
+                    <rect key="frame" x="0.0" y="44" width="390" height="64"/>
+                    <subviews>
+                        <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yip-Sy-50p">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="1"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Rd9-5m-tf5"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bzm-Qc-Qcl">
+                            <rect key="frame" x="8" y="8" width="374" height="48"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="album" translatesAutoresizingMaskIntoConstraints="NO" id="XRM-YT-64S">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="ubo-xb-uo6"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Track Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhI-xV-cKg">
+                                    <rect key="frame" x="64" y="0.0" width="186" height="48"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9oN-uL-mMN">
+                                    <rect key="frame" x="266" y="0.0" width="44" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="44" id="UKG-2K-ow4"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="pause"/>
+                                    <connections>
+                                        <action selector="playPauseTapped:" destination="lqe-aO-lGI" eventType="touchUpInside" id="r0f-dw-e0R"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNX-FR-z7R">
+                                    <rect key="frame" x="326" y="0.0" width="48" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="48" id="Lc0-Wz-pQM"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" image="Right"/>
+                                    <connections>
+                                        <action selector="nextTrack:" destination="lqe-aO-lGI" eventType="touchUpInside" id="ngu-eL-kbe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="bzm-Qc-Qcl" secondAttribute="bottom" constant="8" id="2s0-qd-4Og"/>
+                        <constraint firstItem="yip-Sy-50p" firstAttribute="leading" secondItem="udg-gX-aVc" secondAttribute="leading" id="Fhf-ZW-Syh"/>
+                        <constraint firstItem="bzm-Qc-Qcl" firstAttribute="top" secondItem="udg-gX-aVc" secondAttribute="top" constant="8" id="IHr-Jp-d1a"/>
+                        <constraint firstItem="bzm-Qc-Qcl" firstAttribute="leading" secondItem="udg-gX-aVc" secondAttribute="leading" constant="8" id="TLk-5q-KXH"/>
+                        <constraint firstAttribute="trailing" secondItem="bzm-Qc-Qcl" secondAttribute="trailing" constant="8" id="anp-Wn-K1X"/>
+                        <constraint firstAttribute="height" constant="64" id="hRv-gs-uGW"/>
+                        <constraint firstItem="yip-Sy-50p" firstAttribute="top" secondItem="udg-gX-aVc" secondAttribute="top" id="o3A-mK-Gab"/>
+                        <constraint firstAttribute="trailing" secondItem="yip-Sy-50p" secondAttribute="trailing" id="ygN-zQ-Ibj"/>
+                    </constraints>
+                </view>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="p5q-ak-CEo">
                     <rect key="frame" x="30" y="44" width="330" height="736"/>
                     <subviews>
@@ -23,7 +85,7 @@
                                 <constraint firstAttribute="height" constant="44" id="Z4I-pY-vZh"/>
                             </constraints>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="Drag Down"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Drag Down" title=""/>
                             <connections>
                                 <action selector="dragDownButtonTapped:" destination="lqe-aO-lGI" eventType="touchUpInside" id="VRq-mu-Hal"/>
                             </connections>
@@ -139,8 +201,11 @@
             <viewLayoutGuide key="safeArea" id="aJf-SU-Oo7"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="aJf-SU-Oo7" firstAttribute="trailing" secondItem="udg-gX-aVc" secondAttribute="trailing" id="4bd-nc-OVw"/>
                 <constraint firstItem="p5q-ak-CEo" firstAttribute="leading" secondItem="aJf-SU-Oo7" secondAttribute="leading" constant="30" id="6re-FB-gxk"/>
+                <constraint firstItem="udg-gX-aVc" firstAttribute="top" secondItem="aJf-SU-Oo7" secondAttribute="top" id="Ahf-sE-hZm"/>
                 <constraint firstItem="p5q-ak-CEo" firstAttribute="top" secondItem="aJf-SU-Oo7" secondAttribute="top" id="P2g-3N-AcH"/>
+                <constraint firstItem="udg-gX-aVc" firstAttribute="leading" secondItem="lqe-aO-lGI" secondAttribute="leading" id="Tkk-zx-7i3"/>
                 <constraint firstItem="aJf-SU-Oo7" firstAttribute="bottom" secondItem="p5q-ak-CEo" secondAttribute="bottom" constant="30" id="YZ8-0q-YaN"/>
                 <constraint firstItem="aJf-SU-Oo7" firstAttribute="trailing" secondItem="p5q-ak-CEo" secondAttribute="trailing" constant="30" id="zH2-Jz-DDC"/>
             </constraints>
@@ -149,12 +214,18 @@
                 <outlet property="currentTimeLabel" destination="7Ow-dJ-qru" id="qxl-Un-JZb"/>
                 <outlet property="currentTimeSlider" destination="owA-6s-NTR" id="RL6-tl-StJ"/>
                 <outlet property="durationLabel" destination="gwN-Yf-cfH" id="tCt-dp-Il3"/>
+                <outlet property="maximizedStackView" destination="p5q-ak-CEo" id="AG6-fe-G6t"/>
+                <outlet property="miniGoForwardButton" destination="cNX-FR-z7R" id="C6F-yc-Ect"/>
+                <outlet property="miniTrackImageView" destination="XRM-YT-64S" id="4GM-sU-0Fd"/>
+                <outlet property="miniTrackPlayPauseButton" destination="9oN-uL-mMN" id="nah-6d-zmj"/>
+                <outlet property="miniTrackTitleLabel" destination="qhI-xV-cKg" id="b1P-Zz-Ixf"/>
+                <outlet property="miniTrackView" destination="udg-gX-aVc" id="Zq2-YN-6Kp"/>
                 <outlet property="playPauseButton" destination="Tqa-FS-jdv" id="x5c-fa-hYe"/>
                 <outlet property="trackImageView" destination="z27-UX-P5G" id="drj-DA-5QC"/>
                 <outlet property="trackTitleLabel" destination="2PI-jh-fcO" id="hFX-1M-rXd"/>
                 <outlet property="volumeSlider" destination="34z-wV-VBe" id="uSs-nV-Urn"/>
             </connections>
-            <point key="canvasLocation" x="171" y="-587"/>
+            <point key="canvasLocation" x="170.76923076923077" y="-587.20379146919424"/>
         </view>
     </objects>
     <resources>
@@ -163,9 +234,16 @@
         <image name="IconMax" width="17" height="17"/>
         <image name="Left" width="34" height="20"/>
         <image name="Right" width="34" height="20"/>
+        <image name="album" width="75" height="75"/>
         <image name="pause" width="57" height="57"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
