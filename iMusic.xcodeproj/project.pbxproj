@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3918780028CF915B000C1D12 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391877FF28CF915B000C1D12 /* Library.swift */; };
 		3969A8C328AC166E003FE20E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C228AC166E003FE20E /* MainTabBarController.swift */; };
 		3969A8C528AC1B31003FE20E /* SearchMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C428AC1B31003FE20E /* SearchMusicViewController.swift */; };
 		3969A8C928AD0979003FE20E /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3969A8C828AD0979003FE20E /* SearchResponse.swift */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		173F164DF70393C142EFC017 /* Pods-iMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.release.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.release.xcconfig"; sourceTree = "<group>"; };
 		2826778ED9A9A3A34156C98C /* Pods-iMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMusic.debug.xcconfig"; path = "Target Support Files/Pods-iMusic/Pods-iMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		391877FF28CF915B000C1D12 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		3969A8C228AC166E003FE20E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		3969A8C428AC1B31003FE20E /* SearchMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchMusicViewController.swift; sourceTree = "<group>"; };
 		3969A8C828AD0979003FE20E /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				397DC74728ABFD7200F7C406 /* SceneDelegate.swift */,
 				3969A8DC28AD2752003FE20E /* Services */,
 				3969A8C228AC166E003FE20E /* MainTabBarController.swift */,
+				391877FF28CF915B000C1D12 /* Library.swift */,
 				3969A8CC28AD2687003FE20E /* Search */,
 				3969A8C428AC1B31003FE20E /* SearchMusicViewController.swift */,
 				397DC74928ABFD7200F7C406 /* ViewController.swift */,
@@ -335,6 +338,7 @@
 				3969A8C328AC166E003FE20E /* MainTabBarController.swift in Sources */,
 				397DC74828ABFD7200F7C406 /* SceneDelegate.swift in Sources */,
 				3969A8E728AD2817003FE20E /* SearchModels.swift in Sources */,
+				3918780028CF915B000C1D12 /* Library.swift in Sources */,
 				3969A8F428AE9526003FE20E /* TrackCell.swift in Sources */,
 				399597DA28BF739900299851 /* FooterView.swift in Sources */,
 			);
